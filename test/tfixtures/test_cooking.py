@@ -1,6 +1,6 @@
 import pytest
 
-from src.cooking import start_owen, set_owen, stop_owen
+from src.cooking import set_owen, start_owen, stop_owen
 
 
 @pytest.fixture

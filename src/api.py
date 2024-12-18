@@ -1,5 +1,5 @@
-from typing import Final
 from dataclasses import dataclass
+from typing import Final
 
 ID: Final[int] = 1
 NAME: Final[str] = "Adi"
@@ -20,6 +20,7 @@ class User:
 
     def status(self) -> str:
         return f"{self.name} is a user"
+
 
 def get_user() -> User:
     return User(id=ID, name=NAME)

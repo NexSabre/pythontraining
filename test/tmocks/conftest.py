@@ -1,5 +1,7 @@
 import pytest
+
 from src.api import User
+
 
 @pytest.fixture
 def fixture_get_user_adi() -> User:
