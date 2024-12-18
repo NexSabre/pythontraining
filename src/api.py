@@ -18,6 +18,8 @@ class User:
     def refresh() -> None:
         print("Refreshing data...")
 
+    def status(self) -> str:
+        return f"{self.name} is a user"
 
 def get_user() -> User:
     return User(id=ID, name=NAME)
