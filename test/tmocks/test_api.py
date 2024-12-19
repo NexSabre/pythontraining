@@ -88,3 +88,14 @@ def test_patch_user_status_with_context_manager(mocker) -> None:
     with patch.object(user, "status", return_value="Jordan is NOT a user") as status:
         assert user.status() == "Jordan is NOT a user"
     assert status.call_count == 1, "Status should be called once"
+
+
+# Exercise for the training:
+# 1. Create a new test function `test_patch_user_status_with_different_values` that mocks the status method
+#    to return different values for different calls and verifies the returned values.
+# 2. Create a new test function `test_patch_user_can_fly_with_side_effect` that mocks the can_fly method
+#    to raise an exception on the first call and return True on the second call, and verifies the behavior.
+# 3. Create a new test function `test_patch_user_refresh_with_delay` that mocks the refresh method
+#    to simulate a delay using time.sleep and verifies that the method is called.
+# 4. Create a new test function `test_patch_user_status_with_multiple_users` that mocks the status method
+#    for multiple User instances and verifies the status for each instance.
